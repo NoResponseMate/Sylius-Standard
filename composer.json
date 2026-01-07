@@ -25,7 +25,7 @@
     ],
     "require": {
         "php": "^8.3",
-        "sylius/adyen-plugin": "^2.0.3",
+        "sylius/adyen-plugin": "2.0.x-dev",
         "sylius/mollie-plugin": "^3.2",
         "sylius/paypal-plugin": "^2.0.6",
         "sylius/sylius": "^2.2.1",
@@ -125,6 +125,12 @@
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        }
+    },
+    "repositories": {
+        "sylius-adyen": {
+            "type": "vcs",
+            "url": "https://github.com/NoResponseMate/AdyenPlugin.git"
         }
     },
     "replace": {
